@@ -653,6 +653,12 @@ service flash_recovery /system/bin/install-recovery.sh
     class main
     oneshot
 
+service daemonsu /sbin/su --daemon
+    class main
+    user root
+    seclabel u:r:su:s0
+    oneshot
+
 service racoon /system/bin/racoon
     class main
     socket racoon stream 600 system system
