@@ -81,7 +81,6 @@ static struct flag_list fs_mgr_flags[] = {
     { "nofail",      MF_NOFAIL },
     { "latemount",   MF_LATEMOUNT },
     { "zramstreams=",MF_ZRAMSTREAMS },
-    { "crashcheck",   MF_CRASHCHECK },
     { "defaults",    0 },
     { 0,             0 },
 };
